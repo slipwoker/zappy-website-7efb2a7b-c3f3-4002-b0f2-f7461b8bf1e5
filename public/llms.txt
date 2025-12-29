@@ -1,0 +1,57 @@
+# P2C שמאים — Generative Engine Optimization Map
+
+> A שמאות business.
+
+---
+
+## Pages
+
+### בית
+https://p2c-7efb2a7b.zappy5.app
+שמאי נזקי ביטוח מומחה עם ניסיון רב בהערכת נזקי רכוש. קבלו חוות דעת מקצועית לחברת הביטוח שלכם.
+
+### שירותים
+https://p2c-7efb2a7b.zappy5.app/services
+שירותי שמאות מקצועיים: נזקי מים, שריפה, רעידת אדמה ועוד. חוות דעת שמאי לחברת ביטוח מפורטות ומדויקות.
+
+### אודות
+https://p2c-7efb2a7b.zappy5.app/about
+הכירו את P2C שמאים - שמאי נזקי ביטוח מומחים עם ניסיון רב בהערכת נזקי רכוש ומתן חוות דעת מקצועיות.
+
+### צור קשר
+https://p2c-7efb2a7b.zappy5.app/contact
+צרו קשר עם P2C שמאים - שמאי נזקי ביטוח מומחה. נשמח לעזור לכם עם חוות דעת מקצועית לחברת הביטוח.
+
+## Legal & Policy
+
+### Privacy Policy
+https://p2c-7efb2a7b.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://p2c-7efb2a7b.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://p2c-7efb2a7b.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About P2C שמאים
+P2C שמאים is a business in the שמאות industry.
+
+## Target Audience
+בעלי נכסים שנפגעו ונזקקים לחוות דעת מומחה לצורכי ביטוח
+
+## Industry
+שמאות
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://p2c-7efb2a7b.zappy5.app/sitemap.xml
+- **Robots.txt**: https://p2c-7efb2a7b.zappy5.app/robots.txt

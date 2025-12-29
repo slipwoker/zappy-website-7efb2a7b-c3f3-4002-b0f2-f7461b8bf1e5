@@ -1,0 +1,722 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="שירותי שמאות מקצועיים: נזקי מים, שריפה, רעידת אדמה ועוד. חוות דעת שמאי לחברת ביטוח מפורטות ומדויקות.">
+  <meta name="keywords" content="שמאי נזקי ביטוח, חוות דעת שמאי לחברת ביטוח, שמאות נזקי מים לביטוח, הערכת נזקי שריפה">
+  <title>שירותי שמאות נזקי ביטוח מקצועיים — P2C שמאים</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '7efb2a7b-c3f3-4002-b0f2-f7461b8bf1e5',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="/assets/business-logo.webp" alt="P2C שמאים" class="logo">
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="Call us">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/services">שירותים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>שירותי שמאי נזקי ביטוח המקצועיים שלנו</h1>
+      <h3>פתרונות שמאות מקיפים לכל סוג של נזק לנכס שלכם</h3>
+    </div>
+  </section>
+
+  <section class="services-intro">
+    <div class="container">
+      <div class="intro-text">
+        <p>כשמאי נזקי ביטוח מומחים, אנחנו מבינים שכל נזק הוא ייחודי ודורש גישה מקצועית מותאמת אישית. הצוות שלנו מתמחה במגוון רחב של שירותי שמאות, החל משמאות נזקי מים לביטוח ועד להערכת נזקים מבניים מורכבים. כל חוות דעת שמאי לחברת ביטוח שאנחנו מכינים היא מפורטת, מדויקת ומבוססת על ניסיון של שנים בתחום.</p>
+        <p>המטרה שלנו היא לספק לכם את הכלים הטובים ביותר להתמודדות מול חברת הביטוח ולהבטיח שתקבלו את הפיצוי המלא שמגיע לכם. אנחנו עובדים בשקיפות מלאה, מסבירים כל שלב בתהליך ומלווים אתכם עד לסיום.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-detailed" id="services-intro" data-zappy-section="true">
+  <div class="container">
+    <h2>השירותים המלאים שלנו</h2>
+  </div>
+</section>
+<section class="section service-section" id="שמאות-נזקי-מים-לביטוח" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail">
+      
+        <div class="service-detail-content">
+          <h3>שמאות נזקי מים לביטוח</h3>
+          <p>נזקי מים הם אחד הנזקים הנפוצים ביותר בנכסים, והם יכולים לגרום לנזק משמעותי לא רק למבנה אלא גם לתכולה. כשמאי נזקי ביטוח מומחים, אנחנו מבצעים בדיקה יסודית של כל היקף הנזק - מהצפות, דליפות צנרת, נזקי גשם, נזקי ביוב ועוד.</p>
+          <p>השירות שלנו כולל זיהוי מקור הנזק, הערכת נזקי המבנה והתכולה, בדיקת נזקים נסתרים (כמו רטיבות בקירות ותקרות), והערכת עלויות התיקון המלאות. אנחנו גם בודקים האם יש סכנה לעובש או נזקים מבניים ארוכי טווח.</p>
+          <ul>
+            <li>הערכת נזקי הצפה ודליפות</li>
+            <li>בדיקת נזקי מבנה ותכולה</li>
+            <li>זיהוי נזקים נסתרים</li>
+            <li>הערכת עלויות תיקון מלאה</li>
+            <li>תיעוד מפורט עם תמונות ומדידות</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-4" data-context="Insurance appraiser inspecting water damage in flooded basement with moisture meter and documentation equipment" src="/assets/p2c-service-service-4.webp" alt="שמאות נזקי מים - בדיקת נזקי הצפה במרתף" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="הערכת-נזקי-שריפה" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail reverse">
+      
+        <div class="service-detail-content">
+          <h3>הערכת נזקי שריפה</h3>
+          <p>שריפה היא אחד האירועים הקשים ביותר שבעל נכס יכול לעבור. כשמאי נזקי ביטוח עם ניסיון בנזקי שריפה, אנחנו מבינים את המורכבות של הערכת הנזק - לא רק הנזק הישיר מהאש, אלא גם נזקי העשן, הפיח, החום והמים שהושתמשו בכיבוי.</p>
+          <p>אנחנו מבצעים בדיקה מקיפה של כל המבנה, בודקים את היציבות המבנית, מעריכים את הנזק לתכולה ולמערכות הבית (חשמל, אינסטלציה, מיזוג), ומכינים חוות דעת שמאי לחברת ביטוח מפורטת שכוללת את כל ההיבטים של הנזק.</p>
+          <ul>
+            <li>הערכת נזקי אש ישירים</li>
+            <li>בדיקת נזקי עשן ופיח</li>
+            <li>הערכת יציבות מבנית</li>
+            <li>בדיקת מערכות חשמל ואינסטלציה</li>
+            <li>תיעוד נזקי תכולה</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-5" data-context="Fire damage appraiser documenting burnt structure with charred walls and smoke damage using professional camera" src="/assets/p2c-service-service-5.webp" alt="הערכת נזקי שריפה - תיעוד נזקי אש ועשן" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="שמאות-נזקים-מבניים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail">
+      
+        <div class="service-detail-content">
+          <h3>שמאות נזקים מבניים</h3>
+          <p>נזקים מבניים יכולים לנבוע ממגוון סיבות - רעידות אדמה, שקיעת קרקע, בעיות יסוד, סדקים מבניים ועוד. כשמאי נזקי ביטוח עם הבנה מעמיקה של מבנים, אנחנו מבצעים בדיקה מקצועית שכוללת הערכה הנדסית של היציבות המבנית.</p>
+          <p>אנחנו בודקים סדקים, בעיות בתקרות וקירות, נזקי יסוד, בעיות בטון ועוד. חוות הדעת שלנו כוללת המלצות לתיקון, הערכת דחיפות והערכת עלויות מדויקת.</p>
+          <ul>
+            <li>בדיקת סדקים ונזקי מבנה</li>
+            <li>הערכה הנדסית של יציבות</li>
+            <li>בדיקת נזקי יסוד</li>
+            <li>הערכת בעיות בטון וחיזוקים</li>
+            <li>המלצות לתיקון מקצועיות</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-6" data-context="Structural damage assessment showing inspector examining large cracks in concrete wall with measuring tools" src="/assets/p2c-service-service-6.webp" alt="שמאות נזקים מבניים - בדיקת סדקים ויציבות" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="נזקי-רעידת-אדמה" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail reverse">
+      
+        <div class="service-detail-content">
+          <h3>נזקי רעידת אדמה</h3>
+          <p>רעידות אדמה יכולות לגרום לנזקים נרחבים ומורכבים. כשמאי נזקי ביטוח המתמחים בנזקי רעש, אנחנו יודעים לזהות את כל סוגי הנזקים - מסדקים קלים ועד נזקים מבניים משמעותיים שמסכנים את יציבות המבנה.</p>
+          <p>הבדיקה שלנו כוללת הערכה מלאה של המבנה, זיהוי נזקים גלויים ונסתרים, בדיקת מערכות הבית והערכת הצורך בחיזוקים או תיקונים דחופים.</p>
+          <ul>
+            <li>הערכת נזקי רעידת אדמה</li>
+            <li>זיהוי נזקים מבניים</li>
+            <li>בדיקת יציבות ובטיחות</li>
+            <li>הערכת צורך בחיזוקים</li>
+            <li>תיעוד מקיף לחברת ביטוח</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-7" data-context="Earthquake damage assessment showing appraiser inspecting cracked foundation and tilted walls with safety equipment" src="/assets/p2c-service-service-7.webp" alt="הערכת נזקי רעידת אדמה - בדיקת נזקים מבניים" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="נזקי-גניבה-ופריצה" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail">
+      
+        <div class="service-detail-content">
+          <h3>נזקי גניבה ופריצה</h3>
+          <p>מעבר לנזק הרגשי, גניבה ופריצה גורמים גם לנזק פיזי למבנה ולתכולה. כשמאי נזקי ביטוח, אנחנו מתעדים את כל הנזקים - דלתות וחלונות שבורים, נזקי מנעולים, נזקי קירות ורצפות, ורשימת הפריטים שנגנבו.</p>
+          <p>אנחנו עובדים בשיתוף פעולה עם המשטרה (במידת הצורך) ומכינים חוות דעת שמאי לחברת ביטוח מפורטת שכוללת הערכת שווי הפריטים שנגנבו ועלויות התיקון.</p>
+          <ul>
+            <li>תיעוד נזקי פריצה</li>
+            <li>הערכת שווי פריטים שנגנבו</li>
+            <li>תיעוד נזקי מבנה ומנעולים</li>
+            <li>הערכת עלויות תיקון</li>
+            <li>שיתוף פעולה עם גורמי חקירה</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-8" data-context="Burglary damage assessment showing broken door and damaged lock being documented by insurance appraiser" src="/assets/p2c-service-service-8.webp" alt="תיעוד נזקי פריצה וגניבה" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="נזקי-סערה-ומזג-אויר" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail reverse">
+      
+        <div class="service-detail-content">
+          <h3>נזקי סערה ומזג אויר</h3>
+          <p>סערות, רוחות חזקות, ברד וגשם עזים יכולים לגרום לנזקים משמעותיים לגג, לחלונות, למרפסות ולמבנה כולו. כשמאי נזקי ביטוח עם ניסיון בנזקי מזג אויר, אנחנו יודעים לזהות את כל סוגי הנזקים ולהעריך אותם בצורה מדויקת.</p>
+          <p>הבדיקה שלנו כוללת בדיקת גגות, מרפסות, חלונות, דלתות, נזקי מים שחדרו בגלל הסערה, ונזקים לתכולה.</p>
+          <ul>
+            <li>הערכת נזקי סערה</li>
+            <li>בדיקת נזקי גג ומרפסות</li>
+            <li>תיעוד נזקי חלונות ודלתות</li>
+            <li>הערכת נזקי חדירת מים</li>
+            <li>תיעוד נזקי ברד ורוח</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-9" data-context="Storm damage assessment showing damaged roof tiles and broken windows being inspected after severe weather" src="/assets/p2c-service-service-9.webp" alt="הערכת נזקי סערה - בדיקת נזקי גג וחלונות" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="נזקי-תכולה" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detail">
+      
+        <div class="service-detail-content">
+          <h3>נזקי תכולה</h3>
+          <p>לא רק המבנה נפגע - גם התכולה שלכם יכולה להיפגע באירועים שונים. כשמאי נזקי ביטוח, אנחנו מתמחים גם בהערכת נזקי תכולה - רהיטים, מכשירי חשמל, ציוד, מסמכים חשובים ועוד.</p>
+          <p>אנחנו מתעדים כל פריט שנפגע, מעריכים את שוויו (התחשיבות או ערך החלפה), ומכינים רשימה מפורטת לחברת הביטוח.</p>
+          <ul>
+            <li>תיעוד נזקי תכולה מלא</li>
+            <li>הערכת שווי פריטים</li>
+            <li>רשימת פריטים מפורטת</li>
+            <li>תמונות ותיעוד ויזואלי</li>
+            <li>הערכת ערך החלפה</li>
+          </ul>
+        </div>
+        <div class="service-detail-image">
+          <img data-placeholder="service-10" data-context="Contents damage assessment showing appraiser cataloging damaged furniture and electronics with inventory list" src="/assets/p2c-service-service-10.webp" alt="הערכת נזקי תכולה - תיעוד רהיטים וציוד פגוע" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+  <section class="why-choose">
+    <div class="container">
+      <h2>למה לבחור בשירותי השמאות שלנו?</h2>
+      <div class="reasons-grid">
+        <div class="reason-item">
+          <h3>ניסיון מוכח</h3>
+          <p>שנים של עבודה עם כל חברות הביטוח הגדולות בישראל והכרות מעמיקה עם הדרישות והתהליכים שלהן.</p>
+        </div>
+        <div class="reason-item">
+          <h3>תיעוד מקצועי</h3>
+          <p>כל חוות דעת שמאי לחברת ביטוח שלנו כוללת תיעוד מפורט, תמונות ברזולוציה גבוהה, מדידות מדויקות והערכות עלויות מבוססות.</p>
+        </div>
+        <div class="reason-item">
+          <h3>זמינות גבוהה</h3>
+          <p>אנחנו מגיעים לכל מקום בארץ ומספקים שירות מהיר - כי אנחנו מבינים שזמן הוא כסף במקרים של נזקי רכוש.</p>
+        </div>
+        <div class="reason-item">
+          <h3>ליווי אישי</h3>
+          <p>מהרגע הראשון ועד לקבלת הפיצוי - אנחנו איתכם בכל שלב, עונים על שאלות ומסבירים את התהליך.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>צריכים שמאי נזקי ביטוח מקצועי?</h2>
+        <p>בואו נדבר על הנזק שלכם ונראה איך אנחנו יכולים לעזור לכם לקבל את הפיצוי המלא שמגיע לכם.</p>
+        <a href="/contact" class="btn-primary">צרו קשר עכשיו</a>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[business_phone]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 P2C שמאים. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="/privacy" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="/accessibility" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="/terms" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '7efb2a7b-c3f3-4002-b0f2-f7461b8bf1e5';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>
